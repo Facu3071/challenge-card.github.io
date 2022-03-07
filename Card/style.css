@@ -1,0 +1,120 @@
+/* ************RESET************/
+html {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ************Site style************ */
+body {
+  background-image: url(images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-color: hsl(225, 100%, 92%);
+}
+.article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p {
+  color: hsl(224, 23%, 55%);
+  font-family: 500;
+}
+.container {
+  background-color: white;
+  border-radius: 20px;
+  width: 350px;
+  height: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  max-width: 90vw;
+}
+.p-text {
+  padding: 0 1.7rem;
+}
+.img-main {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container h2 {
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+.container-child {
+  width: inherit;
+  height: 5rem;
+  border-radius: 0.7rem;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: hsl(225, 100%, 98%);
+}
+.container-child img {
+  width: 3rem;
+  height: 3rem;
+}
+.container-child a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  font-size: 14px;
+}
+.container-child h4 {
+  color: #4f5a8c;
+  font-weight: 900;
+}
+.container-child b {
+  color: #4f5a8c;
+  font-weight: 500;
+}
+.btn {
+  width: inherit;
+  height: 3.3rem;
+  margin: 2rem 1.5rem;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+  background-color: hsl(245, 75%, 52%);
+}
+.btn p {
+  color: white;
+  font-weight: 500;
+}
+.p-cancel {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+}
+
+/* ************Media Querie********* */
+@media screen and (min-width: 700px) {
+  .container {
+    width: 370px;
+    height: 600px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+  }
+  .container-child {
+    justify-content: space-around;
+  }
+  .btn {
+    height: 3rem;
+  }
+}
